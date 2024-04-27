@@ -1,0 +1,9 @@
+This script enables video playback in fullscreen mode on a player's screen. There are several ways to initiate playback:
+
+By using an item: /playvideo item embedcodeyoutube triggers the video for all players who possess the specified item.
+By player ID: /playvideo id embedcodeyoutube plays the video specifically for the player with the given ID.
+To all players: /playvideo all embedcodeyoutube broadcasts the video to every player.
+Item directly (look server.lua)
+
+you need to configure which license can execute the playvideo command.
+Note that this script will hide the user interface (UI). Depending on what you're using, you'll need to manage the return process to restore the interface for the players. All the configuration for this script is located in the server.lua file from line 4 to line 19.
